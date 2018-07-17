@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first neural network</title>
+    </head>
+    <body>
+        <h1>My first neural network</h1>
+        <h2>Mode 1</h2>
+        <p>In this mode we'll use a neural network to fit points to a cubic degree polynomial. First, introduce the values for the polynomial coefficients.</p>
+        f(x)=
+        <input type="number" id="a" placeholder="Constant coefficient" /> + 
+        <input type="number" id="b" placeholder="Constant coefficient" />x + 
+        <input type="number" id="c" placeholder="Constant coefficient" />x<sup>2</sup> + 
+        <input type="number" id="d" placeholder="Constant coefficient" />x<sup>3</sup>
+        <br/>
+        <p>Now, set the number of points that we'll use to train the network and the number of training loops. Please note that the points will be randomly generated.</p>
+        Number of points  <input type="number" id="p" placeholder="Points" /> <br/> <br/>
+        Loops  <input type="number" id="n" placeholder="Loops" />
+        <br/>
+        <br/>
+        <button id="train">Start Training</button>
+        <br/>
+        <div id="tr res"><p>f(x)= <span id="a res">0</span> + <span id="b res">0</span>x + <span id="c res">0</span>x<sup>2</sup> + <span id="d res">0</span>x<sup>3</sup></p></div>
+        <br/>
+        <div id="par">
+            <p>Once the training is finished, please select a point to evaluate the fitted polynomial.</p>
+            X: <input type="number" id="point" placeholder="X"/>
+            <br/>
+            <br/>
+            <button id="think">Start Thinking</button>
+        </div>
+        <br/>
+        <div id="result"></div>
+        <h2>Mode 2</h2>
+        <p>In these mode you'll input the points to train the neural network.</p>
+        Number of points to use: <input type="number" id="p2"/><button id="submit">Submit</button>
+        <div id="points par"></div><br/>
+        <p>Now select the number of training loops.</p>
+        Loops<input type="number" id="n2" /><br/><br/>
+        <button id="train2">Start Training</button>
+        <br/>
+        <div id="tr res2"><p>f(x)= <span id="a res2">0</span> + <span id="b res2">0</span>x + <span id="c res2">0</span>x<sup>2</sup> + <span id="d res2">0</span>x<sup>3</sup></p></div>
+        <div id="par2">
+            <br/>
+            <p>Once the training is finished, please select a point to evaluate the fitted polynomial.</p>
+            X: <input type="number" id="point2" placeholder="X"/>
+            <br/>
+            <br/>
+            <button id="think2">Start Thinking</button>
+            <br/>
+        </div>
+        <br/>
+        <div id="result2"></div>
+    </body>
+</html>
